@@ -3,51 +3,51 @@ import { Badge } from "@/components/ui/badge"
 
 const features = [
   {
-    title: "Адаптивная нейрообработка",
-    description: "Самооптимизирующиеся алгоритмы, которые обучаются на нейронных паттернах и улучшают интерпретацию сигналов.",
-    icon: "brain",
-    badge: "ИИ",
-  },
-  {
-    title: "Медицинская защита",
-    description: "Шифрование по стандартам FDA со сквозной защитой конфиденциальных нейронных данных.",
-    icon: "lock",
-    badge: "Сертификат",
-  },
-  {
-    title: "Интуитивное управление",
-    description: "Естественная трансляция мыслей в действия с откликом менее миллисекунды и точностью 99,7%.",
-    icon: "globe",
-    badge: "Точность",
-  },
-  {
-    title: "Предиктивная калибровка",
-    description: "ML-модели, которые предугадывают намерения пользователя и оптимизируют нейронные пути.",
+    title: "Автоматизация задач",
+    description: "Запускает цепочки команд одним кликом — не нужно вводить вручную каждый раз.",
     icon: "zap",
-    badge: "Умный",
+    badge: "Быстро",
   },
   {
-    title: "Биометрическая интеграция",
-    description: "Бесшовная синхронизация с мониторингом жизненных показателей для контроля здоровья.",
-    icon: "link",
-    badge: "Связь",
+    title: "Полная безопасность",
+    description: "Открытый исходный код — вы видите каждую строчку и знаете, что происходит в системе.",
+    icon: "lock",
+    badge: "Открытый код",
   },
   {
-    title: "Поддержка XR",
-    description: "Нативная совместимость с AR/VR-средами для терапевтических и рабочих приложений.",
+    title: "Не требует установки",
+    description: "Просто скачайте .bat файл и запустите. Никаких инсталляторов, реестра и лишних процессов.",
+    icon: "globe",
+    badge: "Просто",
+  },
+  {
+    title: "Работает офлайн",
+    description: "Не нужен интернет — утилита работает полностью локально на вашем компьютере.",
     icon: "target",
-    badge: "XR Ready",
+    badge: "Офлайн",
+  },
+  {
+    title: "Лёгкий вес",
+    description: "Файл весит килобайты, не гигабайты. Никаких тяжёлых зависимостей и фреймворков.",
+    icon: "link",
+    badge: "< 1 КБ",
+  },
+  {
+    title: "Windows совместимость",
+    description: "Работает на Windows 7, 10, 11 без дополнительных настроек прямо из коробки.",
+    icon: "brain",
+    badge: "Windows",
   },
 ]
 
 export function FeaturesSection() {
   return (
-    <section className="py-24 px-6 bg-background">
+    <section id="features" className="py-24 px-6 bg-background">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-4 font-sans">Возможности нового поколения</h2>
+          <h2 className="text-4xl font-bold text-foreground mb-4 font-sans">Почему BatUtil?</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Почувствуйте будущее с технологиями, которые переопределяют возможное
+            Никакого лишнего — только то, что реально нужно для работы с Windows
           </p>
         </div>
 

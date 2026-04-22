@@ -2,6 +2,8 @@ import { Canvas, extend, useFrame } from "@react-three/fiber"
 import { useAspect, useTexture } from "@react-three/drei"
 import { useMemo, useRef, useState, useEffect } from "react"
 import * as THREE from "three"
+import { Button } from "@/components/ui/button"
+import Icon from "@/components/ui/icon"
 
 const TEXTUREMAP = { src: "https://i.postimg.cc/XYwvXN8D/img-4.png" }
 const DEPTHMAP = { src: "https://i.postimg.cc/2SHKQh2q/raw-4.webp" }
@@ -114,8 +116,8 @@ const Scene = () => {
 }
 
 export const Hero3DWebGL = () => {
-  const titleWords = "Synapse AI".split(" ")
-  const subtitle = "Нейроинтерфейсы нового поколения."
+  const titleWords = "Bat Util".split(" ")
+  const subtitle = "Мощная утилита для автоматизации Windows. Безопасная. Бесплатная."
   const [visibleWords, setVisibleWords] = useState(0)
   const [subtitleVisible, setSubtitleVisible] = useState(false)
   const [delays, setDelays] = useState<number[]>([])
@@ -173,6 +175,21 @@ export const Hero3DWebGL = () => {
             {subtitle}
           </div>
         </div>
+        {subtitleVisible && (
+          <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center pointer-events-auto fade-in">
+            <a href="#download">
+              <Button size="lg" className="bg-red-500 hover:bg-red-600 text-white text-lg px-8 pulse-button">
+                <Icon name="Download" size={20} />
+                <span className="ml-2">Скачать .bat</span>
+              </Button>
+            </a>
+            <a href="#features">
+              <Button size="lg" variant="outline" className="border-red-500 text-red-400 hover:bg-red-500 hover:text-white text-lg px-8 bg-transparent">
+                Как это работает
+              </Button>
+            </a>
+          </div>
+        )}
       </div>
 
       <Canvas
